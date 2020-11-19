@@ -155,9 +155,7 @@
 		450D0E602412AEF90066E649 /* SingleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D0DDD2412AEF80066E649 /* SingleStep.swift */; };
 		450D0E612412AEF90066E649 /* GeneralStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D0DDE2412AEF80066E649 /* GeneralStep.swift */; };
 		450D0E622412AEF90066E649 /* TabBarControllerStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D0DDF2412AEF80066E649 /* TabBarControllerStep.swift */; };
-		45737CF62477DEB900FCB6A9 /* ContextAcceptingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45737CF52477DEB900FCB6A9 /* ContextAcceptingView.swift */; };
 		45762913240C76EF0018D344 /* RouteComposer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45762909240C76EF0018D344 /* RouteComposer.framework */; };
-		45BF87E924771CE000354559 /* ContextInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF87E824771CE000354559 /* ContextInstantiatable.swift */; };
 		45BF87ED24771CEF00354559 /* UIHostingControllerWithContextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF87EB24771CEF00354559 /* UIHostingControllerWithContextFactory.swift */; };
 		45BF87EE24771CEF00354559 /* UIHostingControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF87EC24771CEF00354559 /* UIHostingControllerFactory.swift */; };
 		45BF87F124771CFC00354559 /* UIHostingControllerWithContextFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF87F024771CFC00354559 /* UIHostingControllerWithContextFinder.swift */; };
@@ -325,10 +323,8 @@
 		450D0DDE2412AEF80066E649 /* GeneralStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralStep.swift; sourceTree = "<group>"; };
 		450D0DDF2412AEF80066E649 /* TabBarControllerStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerStep.swift; sourceTree = "<group>"; };
 		450D0E632412AF060066E649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouteComposer/Info.plist; sourceTree = "<group>"; };
-		45737CF52477DEB900FCB6A9 /* ContextAcceptingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAcceptingView.swift; sourceTree = "<group>"; };
 		45762909240C76EF0018D344 /* RouteComposer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteComposer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45762912240C76EF0018D344 /* RouteComposerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteComposerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45BF87E824771CE000354559 /* ContextInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextInstantiatable.swift; sourceTree = "<group>"; };
 		45BF87EB24771CEF00354559 /* UIHostingControllerWithContextFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHostingControllerWithContextFactory.swift; sourceTree = "<group>"; };
 		45BF87EC24771CEF00354559 /* UIHostingControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHostingControllerFactory.swift; sourceTree = "<group>"; };
 		45BF87F024771CFC00354559 /* UIHostingControllerWithContextFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHostingControllerWithContextFinder.swift; sourceTree = "<group>"; };
@@ -629,7 +625,6 @@
 		450D0DC02412AEF80066E649 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				45BF87E724771CE000354559 /* SwiftUI */,
 				450D0DC12412AEF80066E649 /* ContextChecking.swift */,
 				450D0DC22412AEF80066E649 /* DispatchQueue+Action.swift */,
 				450D0DC32412AEF80066E649 /* PresentingFinder.swift */,
@@ -693,15 +688,6 @@
 				45762912240C76EF0018D344 /* RouteComposerTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		45BF87E724771CE000354559 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				45737CF52477DEB900FCB6A9 /* ContextAcceptingView.swift */,
-				45BF87E824771CE000354559 /* ContextInstantiatable.swift */,
-			);
-			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		45BF87EA24771CEF00354559 /* SwiftUI */ = {
@@ -903,7 +889,6 @@
 				450D0E522412AEF90066E649 /* Destination.swift in Sources */,
 				450D0DF52412AEF90066E649 /* ActionConnectingAssembly.swift in Sources */,
 				450D0DE72412AEF80066E649 /* LogMessage.swift in Sources */,
-				45BF87E924771CE000354559 /* ContextInstantiatable.swift in Sources */,
 				450D0E132412AEF90066E649 /* DefaultRouter.swift in Sources */,
 				450D0E4F2412AEF90066E649 /* SingleNavigationRouter.swift in Sources */,
 				450D0E292412AEF90066E649 /* UIWindow+Extension.swift in Sources */,
@@ -963,7 +948,6 @@
 				450D0DFF2412AEF90066E649 /* FinderFactory.swift in Sources */,
 				450D0DE52412AEF80066E649 /* DefaultLogger.swift in Sources */,
 				450D0E392412AEF90066E649 /* ClassWithContextFinder.swift in Sources */,
-				45737CF62477DEB900FCB6A9 /* ContextAcceptingView.swift in Sources */,
 				450D0E1C2412AEF90066E649 /* ContainerFactoryBox.swift in Sources */,
 				450D0E452412AEF90066E649 /* NavigationControllerAdapter.swift in Sources */,
 				450D0E322412AEF90066E649 /* ClassFinder.swift in Sources */,
